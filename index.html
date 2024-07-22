@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to Basic Casino</h1>
+        <div class="logo">Basic Casino</div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -17,22 +17,37 @@
                 <li><a href="#">Register</a></li>
             </ul>
         </nav>
+        <div class="user-info">
+            <span class="balance">₹19.66</span>
+            <span class="user-name">Xxxxtremereddy</span>
+            <span class="vip-progress">Your VIP Progress: 78.56% <span class="vip-level">Gold</span></span>
+        </div>
     </header>
 
     <main>
-        <section id="game-section">
+        <section class="featured-game">
             <h2>Featured Game: Slot Machine</h2>
-            <div id="slot-machine">
-                <div class="reel" id="reel1"></div>
-                <div class="reel" id="reel2"></div>
-                <div class="reel" id="reel3"></div>
+            <div class="slot-machine">
+                <div class="slot">🍒</div>
+                <div class="slot">🍒</div>
+                <div class="slot">🍒</div>
             </div>
-            <button id="spin-button">Spin</button>
+            <button class="spin-btn">Spin</button>
+        </section>
+        <section class="game-categories">
+            <div class="category">
+                <h3>Casino</h3>
+                <img src="casino.jpg" alt="Casino">
+            </div>
+            <div class="category">
+                <h3>Sportsbook</h3>
+                <img src="sportsbook.jpg" alt="Sportsbook">
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Basic Casino. All rights reserved.</p>
+        <p>© 2024 Basic Casino. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
