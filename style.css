@@ -8,14 +8,46 @@ body {
     background-color: #f4f4f4;
 }
 
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
 .wallet, .deposit, .withdraw {
     background-color: #fff;
     padding: 20px;
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
 }
 
 h2 {
@@ -55,4 +87,14 @@ input, select {
     margin: 10px 0;
     border: 1px solid #ddd;
     border-radius: 4px;
+}
+
+footer {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
 }
