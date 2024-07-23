@@ -3,48 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Deposit</title>
+    <title>Payment System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wallet">
-        <h2>Wallet</h2>
-        <p>Estimated balance: <span id="balance">$0.35 USD</span></p>
-        <div class="currencies">
-            <div class="currency">
-                <span class="currency-name">INR</span>
-                <span class="currency-value">19.83</span>
-                <span class="currency-usd">$0.24 USD</span>
+    <header>
+        <h1>Welcome to Our Service</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to our website. Here you can find various services and information.</p>
+        </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>Learn more about what we do and our mission.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <p>Explore the services we offer.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with us.</p>
+        </section>
+        <section id="payment">
+            <div class="wallet">
+                <h2>Wallet</h2>
+                <p>Estimated balance: <span id="balance">$0.35 USD</span></p>
+                <div class="currencies">
+                    <div class="currency">
+                        <span class="currency-name">INR</span>
+                        <span class="currency-value">19.83</span>
+                        <span class="currency-usd">$0.24 USD</span>
+                    </div>
+                    <div class="currency">
+                        <span class="currency-name">DOGE</span>
+                        <span class="currency-value">0.85534382</span>
+                        <span class="currency-usd">$0.11 USD</span>
+                    </div>
+                    <!-- Add other currencies here -->
+                </div>
+                <button id="deposit-btn">Deposit</button>
+                <button id="withdraw-btn">Withdraw</button>
             </div>
-            <div class="currency">
-                <span class="currency-name">DOGE</span>
-                <span class="currency-value">0.85534382</span>
-                <span class="currency-usd">$0.11 USD</span>
+            <div class="deposit" style="display: none;">
+                <h2>Deposit</h2>
+                <select id="crypto-select">
+                    <option value="DOGE">Dogecoin</option>
+                    <!-- Add other options here -->
+                </select>
+                <input type="text" id="doge-address" placeholder="Your DOGE deposit address">
+                <button id="send-deposit">Send Deposit</button>
             </div>
-            <!-- Add other currencies here -->
-        </div>
-        <button id="deposit-btn">Deposit</button>
-        <button id="withdraw-btn">Withdraw</button>
-    </div>
-    <div class="deposit" style="display: none;">
-        <h2>Deposit</h2>
-        <select id="crypto-select">
-            <option value="DOGE">Dogecoin</option>
-            <!-- Add other options here -->
-        </select>
-        <input type="text" id="doge-address" placeholder="Your DOGE deposit address">
-        <button id="send-deposit">Send Deposit</button>
-    </div>
-    <div class="withdraw" style="display: none;">
-        <h2>Withdraw</h2>
-        <select id="crypto-withdraw-select">
-            <option value="DOGE">Dogecoin</option>
-            <!-- Add other options here -->
-        </select>
-        <input type="text" id="withdraw-amount" placeholder="Amount to withdraw">
-        <input type="text" id="withdraw-address" placeholder="Withdraw to address">
-        <button id="send-withdraw">Send Withdraw</button>
-    </div>
+            <div class="withdraw" style="display: none;">
+                <h2>Withdraw</h2>
+                <select id="crypto-withdraw-select">
+                    <option value="DOGE">Dogecoin</option>
+                    <!-- Add other options here -->
+                </select>
+                <input type="text" id="withdraw-amount" placeholder="Amount to withdraw">
+                <input type="text" id="withdraw-address" placeholder="Withdraw to address">
+                <button id="send-withdraw">Send Withdraw</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Service. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
