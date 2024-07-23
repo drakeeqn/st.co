@@ -3,87 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>st.co</title>
+    <title>Spacetime Casino</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="path/to/your/logo.png" alt="st.co Logo">
-        </div>
-        <div class="auth-buttons">
-            <button class="sign-in">Sign In</button>
-            <button class="Photon X" id="open-register-modal">Register</button>
+        <div class="header-container">
+            <div class="logo">Stake</div>
+            <div class="auth-buttons">
+                <button class="sign-in">Sign In</button>
+                <button class="register">Register</button>
+            </div>
         </div>
     </header>
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Gamble in 4D</h1>
-                <button class="Create Photon" id="open-register-modal-hero">Create Photon</button>
-                <div class="social-login">
-                    <button class="facebook">Facebook</button>
-                    <button class="google">Google</button>
-                    <button class="metamask">Metamask</button>
-                    <button class="twitch">Twitch</button>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="path/to/your/hero_image.png" alt="Hero Image">
+        <section class="promo">
+            <div class="promo-content">
+                <h2>Daily Races</h2>
+                <p>Play in our $100,000 Daily...</p>
+                <button class="race-now">Race Now</button>
             </div>
         </section>
-        <section class="categories">
-            <div class="category casino">
-                <h2>Casino</h2>
-                <img src="path/to/your/casino_image.png" alt="Casino">
-                <p>Leading Online Casino</p>
-            </div>
-            <div class="category sports">
-                <h2>Sports</h2>
-                <img src="path/to/your/sports_image.png" alt="Sports">
-                <p>Best Sports Betting Online</p>
+        <section class="stake-originals">
+            <h3>Stake Originals</h3>
+            <div class="games">
+                <div class="game">
+                    <img src="dice.png" alt="Dice">
+                    <p>DICE</p>
+                    <span>7,661 playing</span>
+                </div>
+                <div class="game">
+                    <img src="crash.png" alt="Crash">
+                    <p>CRASH</p>
+                    <span>4,189 playing</span>
+                </div>
+                <div class="game">
+                    <img src="plinko.png" alt="Plinko">
+                    <p>PLINKO</p>
+                    <span>4,633 playing</span>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="cookie-consent">
-            <p>We use cookies for functional and analytical purposes.</p>
-            <button>Accept</button>
+    <nav>
+        <div class="nav-container">
+            <button>Browse</button>
+            <button>Casino</button>
+            <button>Bets</button>
+            <button>Sports</button>
+            <button>Chat</button>
         </div>
-    </footer>
-
-    <!-- Registration Modal -->
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <h2>Create an Account</h2>
-            <p>Step 1/2: Fill out your details</p>
-            <form>
-                <label for="email">Email *</label>
-                <input type="email" id="email" required>
-                <label for="username">Username *</label>
-                <input type="text" id="username" required>
-                <p>Your username must be 3-14 characters long.</p>
-                <label for="password">Password *</label>
-                <input type="password" id="password" required>
-                <label for="dob">Date of Birth *</label>
-                <div class="dob-inputs">
-                    <input type="text" placeholder="DD" required>
-                    <input type="text" placeholder="Month" required>
-                    <input type="text" placeholder="YYYY" required>
-                </div>
-                <label for="phone">Phone (Optional)</label>
-                <div class="phone-inputs">
-                    <input type="text" placeholder="Country code">
-                    <input type="text" placeholder="Phone number">
-                </div>
-                <label for="code">Code (Optional)</label>
-                <input type="text" id="code">
-                <button type="submit" class="continue-button">Continue</button>
-            </form>
-        </div>
-    </div>
-
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
