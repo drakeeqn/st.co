@@ -1,23 +1,20 @@
-document.querySelector('.cookie-consent button').addEventListener('click', function() {
-    document.querySelector('.cookie-consent').style.display = 'none';
+document.getElementById('deposit-btn').addEventListener('click', function() {
+    document.querySelector('.deposit').style.display = 'block';
+    document.querySelector('.withdraw').style.display = 'none';
 });
 
-var modal = document.getElementById("register-modal");
-var openModalButtons = [document.getElementById("open-register-modal"), document.getElementById("open-register-modal-hero")];
-var closeButton = document.querySelector(".close-button");
-
-openModalButtons.forEach(function(button) {
-    button.addEventListener("click", function() {
-        modal.style.display = "block";
-    });
+document.getElementById('withdraw-btn').addEventListener('click', function() {
+    document.querySelector('.deposit').style.display = 'none';
+    document.querySelector('.withdraw').style.display = 'block';
 });
 
-closeButton.addEventListener("click", function() {
-    modal.style.display = "none";
+document.getElementById('send-deposit').addEventListener('click', function() {
+    const address = document.getElementById('doge-address').value;
+    alert('Send DOGE to ' + address);
 });
 
-window.addEventListener("click", function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}); 
+document.getElementById('send-withdraw').addEventListener('click', function() {
+    const amount = document.getElementById('withdraw-amount').value;
+    const address = document.getElementById('withdraw-address').value;
+    alert('Withdraw ' + amount + ' DOGE to ' + address);
+});
