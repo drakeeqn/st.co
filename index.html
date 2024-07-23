@@ -3,57 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spacetime Casino</title>
+    <title>Payment Deposit</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <div class="logo">Stake</div>
-            <div class="auth-buttons">
-                <button class="sign-in">Sign In</button>
-                <button class="register">Register</button>
+    <div class="wallet">
+        <h2>Wallet</h2>
+        <p>Estimated balance: <span id="balance">$0.35 USD</span></p>
+        <div class="currencies">
+            <div class="currency">
+                <span class="currency-name">INR</span>
+                <span class="currency-value">19.83</span>
+                <span class="currency-usd">$0.24 USD</span>
             </div>
+            <div class="currency">
+                <span class="currency-name">DOGE</span>
+                <span class="currency-value">0.85534382</span>
+                <span class="currency-usd">$0.11 USD</span>
+            </div>
+            <!-- Add other currencies here -->
         </div>
-    </header>
-    <main>
-        <section class="promo">
-            <div class="promo-content">
-                <h2>Daily Races</h2>
-                <p>Play in our $100,000 Daily...</p>
-                <button class="race-now">Race Now</button>
-            </div>
-        </section>
-        <section class="stake-originals">
-            <h3>Stake Originals</h3>
-            <div class="games">
-                <div class="game">
-                    <img src="dice.png" alt="Dice">
-                    <p>DICE</p>
-                    <span>7,661 playing</span>
-                </div>
-                <div class="game">
-                    <img src="crash.png" alt="Crash">
-                    <p>CRASH</p>
-                    <span>4,189 playing</span>
-                </div>
-                <div class="game">
-                    <img src="plinko.png" alt="Plinko">
-                    <p>PLINKO</p>
-                    <span>4,633 playing</span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <nav>
-        <div class="nav-container">
-            <button>Browse</button>
-            <button>Casino</button>
-            <button>Bets</button>
-            <button>Sports</button>
-            <button>Chat</button>
-        </div>
-    </nav>
+        <button id="deposit-btn">Deposit</button>
+        <button id="withdraw-btn">Withdraw</button>
+    </div>
+    <div class="deposit" style="display: none;">
+        <h2>Deposit</h2>
+        <select id="crypto-select">
+            <option value="DOGE">Dogecoin</option>
+            <!-- Add other options here -->
+        </select>
+        <input type="text" id="doge-address" placeholder="Your DOGE deposit address">
+        <button id="send-deposit">Send Deposit</button>
+    </div>
+    <div class="withdraw" style="display: none;">
+        <h2>Withdraw</h2>
+        <select id="crypto-withdraw-select">
+            <option value="DOGE">Dogecoin</option>
+            <!-- Add other options here -->
+        </select>
+        <input type="text" id="withdraw-amount" placeholder="Amount to withdraw">
+        <input type="text" id="withdraw-address" placeholder="Withdraw to address">
+        <button id="send-withdraw">Send Withdraw</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
