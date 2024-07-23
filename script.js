@@ -1,4 +1,3 @@
-
 document.querySelector('.cookie-consent button').addEventListener('click', function() {
     document.querySelector('.cookie-consent').style.display = 'none';
 });
