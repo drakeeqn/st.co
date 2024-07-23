@@ -1,207 +1,87 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #1a1a1a;
     color: #fff;
 }
 
-header {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #1a1a1a;
+    padding: 10px;
+    background-color: #0a0a0a;
 }
 
-.logo img {
-    height: 40px;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .auth-buttons button {
-    background-color: #3b3b3b;
+    background-color: #007bff;
     border: none;
-    padding: 10px 20px;
-    margin-left: 10px;
-    cursor: pointer;
     color: white;
-    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
 }
 
 .auth-buttons .register {
-    background-color: #007bff;
+    background-color: #28a745;
 }
 
-.hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px;
-    background-image: url('path/to/your/hero_background.jpg');
-    background-size: cover;
-    background-position: center;
+main {
+    padding: 20px;
 }
 
-.hero-content {
-    max-width: 50%;
+.promo {
+    background-color: #292b2c;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.hero-content h1 {
-    font-size: 48px;
-}
-
-.hero-content .register-instantly {
-    background-color: #007bff;
-    border: none;
-    padding: 15px 30px;
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-}
-
-.hero-content .social-login {
-    margin-top: 20px;
-}
-
-.hero-content .social-login button {
-    background-color: #3b3b3b;
-    border: none;
-    padding: 10px 20px;
-    margin: 10px 5px;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-.categories {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background-color: #1a1a1a;
-}
-
-.category {
+.promo-content {
     text-align: center;
-    max-width: 45%;
 }
 
-.category h2 {
-    font-size: 24px;
+.race-now {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.stake-originals {
     margin-bottom: 20px;
 }
 
-.category img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.cookie-consent {
-    background-color: #333;
-    padding: 10px;
+.stake-originals .games {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
 }
 
-.cookie-consent p {
-    margin: 0;
-}
-
-.cookie-consent button {
-    background-color: #007bff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    color: white;
-    border-radius: 4px;
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-    background-color: #1a1a1a;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 400px;
-    border-radius: 10px;
-    color: white;
-}
-
-.close-button {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-button:hover,
-.close-button:focus {
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-content h2,
-.modal-content p {
+.game {
     text-align: center;
 }
 
-.modal-content form {
+.game img {
+    max-width: 100px;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+}
+
+.nav-container {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
 }
-
-.modal-content label {
-    margin: 10px 0 5px;
-}
-
-.modal-content input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-}
-
-.dob-inputs input,
-.phone-inputs input {
-    width: 30%;
-    margin-right: 5px;
-    display: inline-block;
-}
-
-.continue-button {
-    background-color: #00ff00;
-    border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    color: black;
-    font-weight: bold;
-}
-
-.continue-button:hover {
-    background-color: #00cc00;
-} 
