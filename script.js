@@ -17,4 +17,4 @@ document.getElementById('send-withdraw').addEventListener('click', function() {
     const amount = document.getElementById('withdraw-amount').value;
     const address = document.getElementById('withdraw-address').value;
     alert('Withdraw ' + amount + ' DOGE to ' + address);
-});
+}); 
