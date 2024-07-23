@@ -13,14 +13,14 @@
         </div>
         <div class="auth-buttons">
             <button class="sign-in">Sign In</button>
-            <button class="register">Register</button>
+            <button class="register" id="open-register-modal">Register</button>
         </div>
     </header>
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h1>Play Smarter</h1>
-                <button class="register-instantly">Register instantly</button>
+                <button class="register-instantly" id="open-register-modal-hero">Register instantly</button>
                 <div class="social-login">
                     <button class="facebook">Facebook</button>
                     <button class="google">Google</button>
@@ -51,6 +51,39 @@
             <button>Accept</button>
         </div>
     </footer>
+
+    <!-- Registration Modal -->
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Create an Account</h2>
+            <p>Step 1/2: Fill out your details</p>
+            <form>
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+                <label for="username">Username *</label>
+                <input type="text" id="username" required>
+                <p>Your username must be 3-14 characters long.</p>
+                <label for="password">Password *</label>
+                <input type="password" id="password" required>
+                <label for="dob">Date of Birth *</label>
+                <div class="dob-inputs">
+                    <input type="text" placeholder="DD" required>
+                    <input type="text" placeholder="Month" required>
+                    <input type="text" placeholder="YYYY" required>
+                </div>
+                <label for="phone">Phone (Optional)</label>
+                <div class="phone-inputs">
+                    <input type="text" placeholder="Country code">
+                    <input type="text" placeholder="Phone number">
+                </div>
+                <label for="code">Code (Optional)</label>
+                <input type="text" id="code">
+                <button type="submit" class="continue-button">Continue</button>
+            </form>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
