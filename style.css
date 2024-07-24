@@ -1,190 +1,48 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Pure black background */
+    color: white;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
-/* Header */
 header {
-    background-color: #000;
-    color: #fff;
-    padding: 1rem 0;
+    padding: 20px;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 1.8rem;
-    font-weight: 700;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin-left: 2rem;
-}
-
-.nav-links a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    transition: background 0.3s, color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: #555;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    background: url('casino-background.jpg') no-repeat center center/cover;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 1rem;
-}
-
-.hero-content h2 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-.cta-button {
-    padding: 1rem 2.5rem;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #e60000;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #cc0000;
-}
-
-/* Main Content */
-main {
-    padding: 2rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Section Styles */
-section {
-    margin-bottom: 3rem;
-}
-
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    font-weight: 700;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-/* Games Section */
-.games-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.game-card {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: calc(33% - 2rem);
-}
-
-.game-card img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.game-card h3 {
-    margin: 0;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-
-.game-card p {
-    font-size: 1rem;
-}
-
-/* Contact Form */
-form {
+.image-container img {
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    height: auto;
+    border-radius: 10px;
 }
 
-input, textarea, button {
-    padding: 1rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+.button-container {
+    margin: 20px 0;
 }
 
 button {
-    background-color: #e60000;
-    color: #fff;
+    background-color: #444; /* Dark gray for contrast */
+    color: white;
     border: none;
+    padding: 10px 20px;
+    margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 button:hover {
-    background-color: #cc0000;
+    background-color: #666;
 }
 
-/* Footer */
 footer {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
+    border-top: 1px solid #333;
 }
