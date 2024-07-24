@@ -3,10 +3,11 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    color: #333;
 }
 
 header, footer {
-    background-color: #333;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -15,7 +16,6 @@ header, footer {
 .slider {
     width: 100%;
     height: 400px;
-    overflow: hidden;
     position: relative;
 }
 
@@ -24,10 +24,34 @@ header, footer {
     height: 100%;
     object-fit: cover;
     display: block;
-    transition: transform 0.5s ease-in-out;
 }
 
 .content {
     padding: 20px;
     text-align: center;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
