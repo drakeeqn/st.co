@@ -1,15 +1,10 @@
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slider img');
-const totalSlides = slides.length;
-
-document.querySelector('.next').addEventListener('click', () => {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % totalSlides;
-    slides[currentSlide].classList.add('active');
-});
-
-document.querySelector('.prev').addEventListener('click', () => {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add('active');
+var swiper = new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
 });
