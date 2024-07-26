@@ -1,24 +1,50 @@
-body {
+/* style.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
-.jumbotron {
-    background: url('assets/images/casino-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-    padding: 100px 0;
+.hero-section {
+    background: url('images/space-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-.card {
-    margin-bottom: 30px;
+.game-preview .card {
+    margin-bottom: 20px;
 }
 
 footer {
-    background-color: #343a40;
-    color: white;
+    background-color: #111;
+    color: #bbb;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
 }
