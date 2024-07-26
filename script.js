@@ -1,6 +1,6 @@
 // script.js
 $(document).ready(function() {
-    // Example: Smooth Scroll for internal links
+    // Smooth scroll for internal links
     $('a[href*="#"]').on('click', function(e) {
         e.preventDefault();
 
@@ -9,5 +9,12 @@ $(document).ready(function() {
         }, 500, 'linear');
     });
 
-    // Additional interactivity can be added here
+    // Navbar scroll change
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.navbar').addClass('navbar-shrink');
+        } else {
+            $('.navbar').removeClass('navbar-shrink');
+        }
+    });
 });
