@@ -3,46 +3,75 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     height: 100%;
+    background-color: #0c0c0c;
+    color: #fff;
+}
+
+.navbar-brand {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
 }
 
 .hero-section {
     background: url('images/space-background.jpg') no-repeat center center/cover;
     height: 100vh;
-    display: flex;
-    align-items: flex-start; /* Adjusting alignment to start */
-    justify-content: center;
-    color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    padding-top: 15%; /* Adjust this value to move content down/up */
+    padding-top: 15%;
 }
 
 .hero-section .container {
     text-align: center;
+    max-width: 800px;
 }
 
 .hero-section h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-.btn {
-    font-size: 1rem;
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    font-size: 1.2rem;
     padding: 10px 20px;
 }
 
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #0c0c0c;
+}
+
+.game-preview {
+    background-color: #1c1c1c;
+}
+
 .game-preview .card {
-    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.game-preview .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.game-preview .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 footer {
     background-color: #111;
     color: #bbb;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 footer a {
@@ -55,15 +84,15 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-    .navbar .navbar-nav {
-        text-align: center;
+    .hero-section {
+        padding-top: 20%;
     }
 
     .hero-section h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hero-section p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
