@@ -4,16 +4,35 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
+    height: 100%;
 }
 
 .hero-section {
     background: url('images/space-background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Adjusting alignment to start */
     justify-content: center;
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    padding-top: 15%; /* Adjust this value to move content down/up */
+}
+
+.hero-section .container {
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
 }
 
 .game-preview .card {
@@ -41,10 +60,10 @@ footer a:hover {
     }
 
     .hero-section h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .hero-section p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 }
